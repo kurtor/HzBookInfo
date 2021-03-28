@@ -1,0 +1,114 @@
+{
+  "id": "2404295",
+  "name": "HzBookInfo",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "18246795",
+      "name": "消息",
+      "font_class": "xiaoxi",
+      "unicode": "e619",
+      "unicode_decimal": 58905
+    },
+    {
+      "icon_id": "19674252",
+      "name": "右箭头",
+      "font_class": "right",
+      "unicode": "eb1b",
+      "unicode_decimal": 60187
+    },
+    {
+      "icon_id": "5071275",
+      "name": "书架",
+      "font_class": "shujia",
+      "unicode": "e608",
+      "unicode_decimal": 58888
+    },
+    {
+      "icon_id": "7791969",
+      "name": "用户名",
+      "font_class": "ziyuanxhdpi",
+      "unicode": "e648",
+      "unicode_decimal": 58952
+    },
+    {
+      "icon_id": "947480",
+      "name": "密码",
+      "font_class": "mima",
+      "unicode": "e646",
+      "unicode_decimal": 58950
+    },
+    {
+      "icon_id": "1025734",
+      "name": "icon_展开",
+      "font_class": "iconzhankai",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "19674530",
+      "name": "上箭头",
+      "font_class": "caret-up",
+      "unicode": "eb21",
+      "unicode_decimal": 60193
+    },
+    {
+      "icon_id": "4437603",
+      "name": "下箭头",
+      "font_class": "xiajiantou",
+      "unicode": "e615",
+      "unicode_decimal": 58901
+    },
+    {
+      "icon_id": "5643514",
+      "name": "关于",
+      "font_class": "guanyu",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    },
+    {
+      "icon_id": "8159850",
+      "name": "投诉",
+      "font_class": "tousu",
+      "unicode": "e638",
+      "unicode_decimal": 58936
+    },
+    {
+      "icon_id": "5270852",
+      "name": "收 藏-产品详情",
+      "font_class": "shoucang",
+      "unicode": "e613",
+      "unicode_decimal": 58899
+    },
+    {
+      "icon_id": "2811149",
+      "name": "评价",
+      "font_class": "pingjia",
+      "unicode": "e641",
+      "unicode_decimal": 58945
+    },
+    {
+      "icon_id": "15779743",
+      "name": "图书",
+      "font_class": "tushu",
+      "unicode": "e70a",
+      "unicode_decimal": 59146
+    },
+    {
+      "icon_id": "13972277",
+      "name": "精选优品",
+      "font_class": "jingxuanyoupin",
+      "unicode": "e653",
+      "unicode_decimal": 58963
+    },
+    {
+      "icon_id": "14348495",
+      "name": "图书馆",
+      "font_class": "tushuguan",
+      "unicode": "e69b",
+      "unicode_decimal": 59035
+    }
+  ]
+}
