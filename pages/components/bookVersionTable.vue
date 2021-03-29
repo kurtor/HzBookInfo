@@ -82,7 +82,7 @@
 			border-radius: 10rpx;
 		}
 		
-		.item-no-img{
+		.item-with-img{
 			display:flex;
 			margin-top:40rpx;
 			margin-right:20rpx;
@@ -147,26 +147,31 @@
 			}
 		}
 		
-		.item-with-img{
+		.item-no-img{
 			display:flex;
 			margin-top:40rpx;
-			margin-right:20rpx;		
-			.realInfo{
+			margin-right:20rpx;	
+				
+			image{
+				display:none;
+			}
+			
+			.item-container{
 				display: flex;
 				image{
 					display:none;
 				}		
-				.realText{
+				.item-text{
 					width: 548rpx;
 					margin:0 0 20rpx 30rpx;
-					.title{
+					.item-title{
 						ling-height:50rpx;
-						font-size:30rpx;
+						font-size:32rpx;
 						font-weight: 800;
 					}
-					.content{
+					.item-content{
 						margin-top:20rpx;
-						.realAuthor,.publisher,.pageCount{
+						.content-author,.content-publisher,.content-page{
 							ling-height:45rpx;
 							font-size:28rpx;
 						}
@@ -174,7 +179,7 @@
 				}
 			}
 			
-			.realMore{
+			.show-img{
 				font-size:36rpx;
 				font-family: "iconfont" !important;
 				font-style: normal;

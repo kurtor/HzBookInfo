@@ -13,9 +13,6 @@
 			</view>	
 		</scroll-view>
 	</view>
-	<view class="noListItem" v-else>
-			{{failHint}}
-	</view>
 </template>
 
 <script>
@@ -69,13 +66,5 @@
 				-webkit-box-orient: vertical;
 			}
 		}
-	}
-	
-	
-	
-	.noListItem{
-		font-size:40rpx;
-		text-align: center;
-		margin:500rpx 0;
 	}
 </style>

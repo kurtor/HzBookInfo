@@ -1,9 +1,16 @@
 <template>
 	<view>
 		<mescroll-uni ref="mescrollRef" @init="mescrollInit" @up="upCallback" :up="upOption" textNoMore="--我是有底线的--">
-			<view class="content">
-				<book-scroll-view :bookList="bookList"></book-scroll-view>
-			</view>
+			<template v-if = "requestSuccess">
+				<view class="content">
+					<book-scroll-view :bookList="bookList"></book-scroll-view>
+				</view>
+			</template>
+			<template v-else>
+				<view class="noListItem">
+						{{failHint}}
+				</view>
+			</template>
 		</mescroll-uni>
 	</view>
 </template>
@@ -18,6 +25,8 @@
 		data() {
 			return {
 				bookList:[],
+				requestSuccess: false,
+				failHint:"",
 				upOption:{
 					page:{
 						size:4
@@ -28,7 +37,6 @@
 		},
 		methods: {
 			upCallback({num, size}) {
-				console.log("needcallback")
 				uni.request({
 					url: this.$websiteUrl + `/api/book/getPageContent/${this.current}/${num}/${size}`,
 					method: 'GET',
@@ -40,10 +48,12 @@
 							this.bookList = [];
 						} 
 						this.bookList = this.bookList.concat(curPageData);
-						console.log(this.bookList)
-						this.mescroll.endBySize(curPageLen, totalSize)
+						this.mescroll.endBySize(curPageLen, totalSize);
+						console.log(this.bookList )
+						this.requestSuccess = true;
 					},
 					fail: () => {
+						this.failHint = "图书走丢了"
 						this.mescroll.endErr()
 					}
 				})
@@ -59,5 +69,11 @@
 <style lang="scss">
 	.content{
 		margin:130rpx $uni-col-margin;
+	}
+	
+	.noListItem{
+		font-size:40rpx;
+		text-align: center;
+		margin:500rpx 0;
 	}
 </style>

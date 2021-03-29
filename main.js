@@ -6,7 +6,7 @@ import {router, RouterMount} from './router.js'
 
 Vue.config.productionTip = false
 Vue.prototype.$store = store
-Vue.prototype.$websiteUrl = "http://192.168.1.17:7001"
+Vue.prototype.$websiteUrl = "https://www.9du.club"
 Vue.prototype.$imgUrl = "http://gitee.com/kurtor/hz-book-info/raw/master/"
 Vue.prototype.$EventBus = new Vue();
 

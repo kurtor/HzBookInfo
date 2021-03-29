@@ -6,7 +6,7 @@
 				<text>{{value}}</text>
 			</view>
 		</scroll-view>
-		#<!-- #ifdef H5 -->
+		<!-- #ifdef H5 -->
 		<keep-alive>
 		<!-- #endif -->
 			<view class="booklist-wrapper">

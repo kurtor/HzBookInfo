@@ -68,19 +68,17 @@
 			}
 		},
 		onLoad(option){
-			console.log(option)
 			uni.request({
 				url:this.$websiteUrl + '/api/book/search?id=' +option.id, 
 				method:'GET',
 				success:(res)=>{
 					this.bookitem = res.data;
 					this.bookitem.bookVersions.forEach((versionValue,versionIndex)=>{
-						this.$set(versionValue,'showImg',false)
+						this.$set(versionValue,'showImgFlag',true)
 						this.$set(versionValue,'showInventoryFlag',false)
 						this.mergeRowSpan(versionValue.bookInventories,'lib_name')
 						this.mergeRowSpan(versionValue.bookInventories,'lib_room')
-					})
-					console.log(this.bookitem)			
+					})		
 					this.isFavoriteCheck();
 					this.haveFinished = true;
 				},

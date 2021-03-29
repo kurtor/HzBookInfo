@@ -1,5 +1,5 @@
 {
-    "name" : "HzBookInfo",
+    "name" : "图书馆藏展示",
     "appid" : "__UNI__B3407E8",
     "description" : "",
     "versionName" : "1.0.0",
@@ -72,7 +72,8 @@
     },
     "h5" : {
         "router" : {
-            "mode" : "history"
+            "mode" : "history",
+            "base" : "/hz/"
         },
         "devServer" : {
             "port" : 8888,
@@ -80,6 +81,8 @@
             "host" : "0.0.0.0",
             "disableHostCheck" : true,
             "noInfo" : true
-        }
+        },
+        "title" : "图书馆藏展示",
+        "domain" : "www.9du.club"
     }
 }
